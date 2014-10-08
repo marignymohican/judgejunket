@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Judge Junkets</title>
+
+<style type="text/css">
+	.entry-content { margin: 50px auto; width: 620px; }
+</style>
+<link rel="stylesheet" href="jj.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBuz5VZo71gQFJHXshBBtwbLCk99C0G9w"></script>
+
+</head>
+
+<body>
+
+
+<div class="entry-content">
+
+<p><a href="http://www-uat.nola.com/elections/index.ssf/2014/10/judge_trip_example_map.html">See an example of this mapping application within a Movable Type entry</a></p>
+
+<link href="/maps/judgetrips/jj.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/spiderfier.js"></script>
+<script type="text/javascript" src="/maps/styles/all.js"></script>
+<script src="/maps/judgetrips/jj.js"></script>
+<div id="jmap">
+<div id="jhead">
+<h3>traveling judges</h3>
+<p>Out-of-town trips New Orleans criminal court judges took between January 2013 and June 2014.</p>
+<ul>
+<li>Select a judge from the dropdown to see the destinations.</li>
+<li>Click a destination on the map for more information</li>
+</ul>
+</div>
+<select id="jnames"></select>
+<div id="map-canvas"></div>
+<ul id="jtrips"></ul>
+<div id="jKey"><span style="color: #ff0000;">•</span> 2013 <span style="color: #0000ff;">•</span> 2014
+<p>* Trip paid by U.S. government<br /> ** Trip paid by sponsor</p>
+<p>NOTE: Judge Karen Herman did not seek any public reimbursement for out-of-town travel. Source: Orleans Parish Criminal District Court.</p>
+</div>
+</div>
+
+</div>
+
+<!--
+pretty dropdown
+finalize "mobile" view (not much to change, actually)
+minor style issues
+-->
+
+</body>
+</html>

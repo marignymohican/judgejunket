@@ -1,0 +1,95 @@
+#jmap { 
+	clear: both; 
+	font-family: san-serif;
+	overflow: hidden;
+}
+#jmap #jhead {
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000; 
+}
+#jmap #jhead > h3, #jmap #jhead > p { font-family: sans-serif; }
+#jmap #jhead h3 { margin: 6px; font-size: 1.4em; font-variant: small-caps; }
+#jmap #jhead p { margin: 0 6px; font-size: .9em; }
+#jmap #jhead ul { margin: 0; padding-bottom: 6px; font-family: sans-serif; font-size: .9em; }
+
+#jmap #jnames { 
+	display: block;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+
+	padding: .2em .2em .2em 2em;
+	margin: 0 !important;
+	width: 110%;
+	height: auto !important;
+	
+	color: #fff;
+	background: #000 url('/maps/icons/select-arrows.png') no-repeat left center; 
+	
+	border: none;
+	border-radius: 0;
+	
+	line-height: 1.7em;
+	font-family: sans-serif; 
+	font-size: 1.5em; 
+	font-weight: bold;
+}
+#jmap #jnames option {
+	margin-left: 0;
+	padding: .2em;
+	
+	color: #000;
+	background-color: #fff;
+	
+	border-radius: 0;
+	
+	font-size: .75em;
+}
+
+#map-canvas { width: 100%; height: 300px; }
+/* infowindows */
+#jj { width: 200px; }
+#jj h3 { margin: 0; font-family: sans-serif; }
+
+#jtrips {
+	cursor: pointer;
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#jtrips li { 
+	display: table-row;
+	min-height: 2em;
+	background-color: #E1E3E9;
+	border-bottom: 1px solid #666;
+}
+#jtrips li div { 
+	display: table-cell;
+	padding: 5px;
+	line-height: 1.1em;
+	vertical-align: top;
+	font-family: sans-serif;
+}
+#jtrips li div:first-child { 
+	font-size: .8em;
+}
+#jtrips li div:last-child { 
+	text-align: right;
+}
+#jtrips #cptotal { font-variant: small-caps; font-size: 1.5em; text-align: right; }
+
+#jKey { margin-top: 8px; line-height: 1.2em; font-size: .8em; }
+#jKey span { font-size: 1.5em; }
+.keycolor { display: inline-block; width: 10px; height: 10px; border: 1px solid #000; }
+#jKey p { margin: 0 !important; font-style: italic; }
+
+@media screen and (max-device-width : 600px){
+	#jmap { width: 90%; }
+	#map-canvas { height: 250px; }
+	#jtrips li div { display: block; }
+}
+
+
